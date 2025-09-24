@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import "primeicons/primeicons.css";
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 120rem;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-pink: '#FB2E86';
+  --color-off-navy-blue: '#3F509E';
+  --color-purple: '#7E32E0';
+  --color-off-purple: '#9F63B5';
+  --color-navy-blue: '#151875';
+  --color-red: '#FB2448';
+  --color-sky-blue: '#F2F4FF';
+  --color-blue: '#2F1BC4';
+  --color-phantom-purple: '#E0D3F5';
+  --color-off-blue: '#151875';
+  
+
+
+
+}
