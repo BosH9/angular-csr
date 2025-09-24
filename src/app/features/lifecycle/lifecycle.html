@@ -1,0 +1,10 @@
+<h2 class="font-bold">Lifecycle Parent:</h2>
+<label for="name">Name: </label>
+<input id="name" [formControl]="name" type="text" />
+<br />
+<br />
+<br />
+<app-lifecycle-child>
+    Hi from parent
+    <app-lifecycle-inner-child>Hi from Lifecycle</app-lifecycle-inner-child>
+</app-lifecycle-child>

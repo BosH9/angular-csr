@@ -8,4 +8,9 @@ export const routes: Routes = [
         (m) => m.ProductComponent
       ),
   },
+  {
+    path: 'lifecycle',
+    loadComponent: () =>
+      import('@features/lifecycle/lifecycle').then((m) => m.Lifecycle),
+  },
 ];
