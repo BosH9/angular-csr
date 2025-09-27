@@ -13,4 +13,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('@features/lifecycle/lifecycle').then((m) => m.Lifecycle),
   },
+  {
+    path: 'interpolation',
+    loadComponent: () =>
+      import('@features/interpolation/interpolation').then(
+        (m) => m.Interpolation
+      ),
+  },
 ];
