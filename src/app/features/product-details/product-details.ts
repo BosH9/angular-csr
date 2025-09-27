@@ -12,6 +12,7 @@ import {
   OnDestroy,
   OnInit,
   output,
+  ViewEncapsulation,
 } from '@angular/core';
 import { ProductComponent } from '@features/product/product.component';
 import { Tables } from '@utils/database.types';
@@ -22,6 +23,9 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './product-details.html',
   styleUrl: './product-details.css',
   imports: [CommonModule, ButtonModule],
+  // encapsulation: ViewEncapsulation.None,
+  // encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class ProductDetails
   implements
