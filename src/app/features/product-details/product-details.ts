@@ -26,6 +26,7 @@ import { ButtonModule } from 'primeng/button';
   // encapsulation: ViewEncapsulation.None,
   // encapsulation: ViewEncapsulation.Emulated,
   encapsulation: ViewEncapsulation.ShadowDom,
+  // styles: 'li {color: green;}',
 })
 export class ProductDetails
   implements
