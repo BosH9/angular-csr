@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Lifecycle hooks](lifecycle-hooks.md)
 
 ## Getting Started
 
