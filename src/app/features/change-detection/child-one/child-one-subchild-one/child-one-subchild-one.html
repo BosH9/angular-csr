@@ -1,0 +1,11 @@
+<p>child-one-subchild-one works!</p>
+<p>Component Name: {{name}}</p>
+
+@if(user){
+<div class="flex flex-col">
+    <p>User name: {{user.name}}</p>
+    <p>User age: {{user.age}}</p>
+    <p>Address: {{user.address?.city}}</p>
+    <p>Pincode: {{user.address?.pinCode}}</p>
+</div>
+}

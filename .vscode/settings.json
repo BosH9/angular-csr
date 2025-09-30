@@ -3,6 +3,7 @@
         "primeicons",
         "primeng",
         "primeuix",
+        "subchild",
         "supabase"
     ]
 }

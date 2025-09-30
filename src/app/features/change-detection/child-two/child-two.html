@@ -1,0 +1,12 @@
+<p class="text-center text-xl">child-two</p>
+<p>Child two name: {{childTwoName}}</p>
+
+<button class="p-2 bg-red-500 mb-4" (click)="setName()">Set Name</button>
+<button class="p-2 bg-green-500 mb-4" (click)="resetName()">Reset Name</button>
+
+<div class="flex flex-col">
+    <div class="grid grid-cols-2 gap-4">
+        <app-child-two-subchild-one [name]="childTwoName" />
+        <app-child-two-subchild-two [name]="childTwoName" />
+    </div>
+</div>

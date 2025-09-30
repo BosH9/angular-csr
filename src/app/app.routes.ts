@@ -20,4 +20,11 @@ export const routes: Routes = [
         (m) => m.Interpolation
       ),
   },
+  {
+    path: 'change-detection',
+    loadComponent: () =>
+      import('@features/change-detection/change-detection').then(
+        (m) => m.ChangeDetectionEx
+      ),
+  },
 ];
