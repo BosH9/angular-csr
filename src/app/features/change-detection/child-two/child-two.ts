@@ -18,4 +18,8 @@ export class ChildTwo {
   resetName(): void {
     this.childTwoName = '';
   }
+
+  setParentName(name: string): void {
+    this.childTwoName = name;
+  }
 }
