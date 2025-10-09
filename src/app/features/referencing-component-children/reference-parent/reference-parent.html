@@ -1,0 +1,38 @@
+<p #ptitle>reference-parent works!</p>
+<p #ptitle>reference-parent works!</p>
+<p #ptitle>reference-parent works!</p>
+
+<!-- View children examples -->
+
+<!-- No children example -->
+<!-- <app-reference-child/> -->
+
+<!-- With single child example -->
+<!-- <app-reference-child/> -->
+
+
+<!-- With multiple children example -->
+<!-- <app-reference-child></app-reference-child>
+<app-reference-child></app-reference-child> -->
+
+<!-- Content children examples -->
+
+<app-reference-child>
+    <app-child>
+        <p card-header>Product Details</p>
+        <p card-body>This is a description of the product.</p>
+    </app-child>
+</app-reference-child>
+
+
+<app-child #child>
+    <div #feature>Hello feature 1</div>
+    <div #feature>Hello feature 1.1</div>
+    <p card-header>Product Details 1</p>
+    <p card-body>This is a description of the product.</p>
+</app-child>
+<app-child #child>
+    <div #feature>Hello feature 2</div>
+    <p card-header>Product Details 2</p>
+    <p card-body>This is a description of the product.</p>
+</app-child>
