@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
+@import '@angular/cdk/overlay-prebuilt.css';
 
 @theme {
   --font-display: "Satoshi", "sans-serif";

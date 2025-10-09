@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "github-build": "ng build --configuration production --base-href 'https://BosH9.github.io/angular-csr/'"
   },
   "prettier": {
     "overrides": [
@@ -20,6 +21,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cdk": "^20.2.7",
     "@angular/common": "^20.1.0",
     "@angular/compiler": "^20.1.0",
     "@angular/core": "^20.1.0",
@@ -30,6 +32,7 @@
     "@primeuix/themes": "^1.2.3",
     "@supabase/supabase-js": "^2.57.0",
     "@tailwindcss/postcss": "^4.1.12",
+    "angular-cli-ghpages": "^2.0.3",
     "primeicons": "^7.0.0",
     "primeng": "^20.1.1",
     "rxjs": "~7.8.0",
