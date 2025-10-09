@@ -1,0 +1,7 @@
+.host{
+    --my-background: red;
+   
+}
+.my-background{
+    background: var(--my-background);
+}

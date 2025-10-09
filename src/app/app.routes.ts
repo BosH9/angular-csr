@@ -34,4 +34,11 @@ export const routes: Routes = [
         (m) => m.Parent
       ),
   },
+  {
+    path: 'host-elements',
+    loadComponent: () =>
+      import('@features/host-elements/host-elements').then(
+        (m) => m.HostElements
+      ),
+  },
 ];
