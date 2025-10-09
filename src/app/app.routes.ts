@@ -27,4 +27,11 @@ export const routes: Routes = [
         (m) => m.ChangeDetectionEx
       ),
   },
+  {
+    path: 'content-projection',
+    loadComponent: () =>
+      import('@features/content-projection/parent/parent').then(
+        (m) => m.Parent
+      ),
+  },
 ];
