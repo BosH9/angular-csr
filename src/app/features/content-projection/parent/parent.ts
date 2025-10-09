@@ -3,6 +3,7 @@ import { DialogModule, Dialog, DialogConfig } from '@angular/cdk/dialog';
 import { Child } from '../child/child';
 import { Button } from 'primeng/button';
 import { Modal } from '../modal/modal';
+import { HostElements } from '@features/host-elements/host-elements';
 
 interface DialogData {
   name: string;
@@ -11,7 +12,7 @@ interface DialogData {
 
 @Component({
   selector: 'app-parent',
-  imports: [Child, Button, DialogModule],
+  imports: [Child, Button, DialogModule, HostElements],
   templateUrl: './parent.html',
   styleUrl: './parent.css',
 })
