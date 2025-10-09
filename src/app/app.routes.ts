@@ -41,4 +41,11 @@ export const routes: Routes = [
         (m) => m.HostElements
       ),
   },
+  {
+    path: 'reference-component-children',
+    loadComponent: () =>
+      import(
+        '@features/referencing-component-children/reference-parent/reference-parent'
+      ).then((m) => m.ReferenceParent),
+  },
 ];
