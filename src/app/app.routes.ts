@@ -48,4 +48,16 @@ export const routes: Routes = [
         '@features/referencing-component-children/reference-parent/reference-parent'
       ).then((m) => m.ReferenceParent),
   },
+  {
+    path: 'di',
+    loadChildren: () => [
+      {
+        path: 'weather',
+        loadComponent: () =>
+          import('@features/dependency-injection/weather/weather').then(
+            (m) => m.Weather
+          ),
+      },
+    ],
+  },
 ];
