@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { Cart } from '@features/dependency-injection/route-component/cart';
 
 export const routes: Routes = [
   {
@@ -57,6 +58,29 @@ export const routes: Routes = [
           import('@features/dependency-injection/weather/weather').then(
             (m) => m.Weather
           ),
+      },
+      {
+        path: 'view-providers',
+        loadComponent: () =>
+          import(
+            '@features/dependency-injection/view-providers/view-providers'
+          ).then((m) => m.AppViewProvidersComponent),
+      },
+      {
+        path: 'store',
+        loadComponent: () =>
+          import(
+            '@features/dependency-injection/route-component/store/store'
+          ).then((m) => m.Store),
+        providers: [Cart],
+      },
+      {
+        path: 'resolution-modifiers',
+        loadComponent: () =>
+          import(
+            '@features/dependency-injection/injector-hierarchies/data.component'
+          ).then((m) => m.SelfNoDataComponent),
+        providers: [Cart],
       },
     ],
   },
